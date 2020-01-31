@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Особый сайт</title>
+  <style>
+    h1 {
+      max-width: 80vw;
+      font-size: 9vw;
+      font-family: sans-serif;
+    }
+    #userName {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1>
+    Сайт сделан специально для тебя, <span id="userName"></span>
+  </h1>
+
+  <script>
+    let name = prompt('Как тебя зовут?')
+    document.getElementById('userName').textContent = name
+    console.log('Ниже результат выполнения функции:')
+    console.log(document.getElementById('userName'))
+  </script>
+</body>
+</html>
