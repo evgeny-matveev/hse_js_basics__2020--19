@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Анимации через ЖС</title>
+  <link rel="stylesheet" href="animations.css">
+</head>
+<body>
+  <div class="box" onclick="reset()"></div>
+
+  <button onclick="paintItBlack()">
+    Покрасить в черный
+  </button>
+
+  <button onclick="makeCircle()">
+    Сделать круглым
+  </button>
+
+  <button onclick="move()">
+    Подвинуть вправо и вниз на 100px
+  </button>
+
+  <button onclick="makeBlinking()">
+    Сделать мигающим
+  </button>
+
+  <input id="textInput" type="text" placeholder="Напишите любое слово">
+  <button onclick="addText()">
+    Добавить надпись
+  </button>
+
+  <input id="colorInput" type="text" placeholder="Напишите название цвета на английском или код цвета в формате HEX">
+  <button onclick="changeColor()">
+    Поменять цвет на введенный
+  </button>
+
+  <script src="animations.js"></script>
+</body>
+</html>
