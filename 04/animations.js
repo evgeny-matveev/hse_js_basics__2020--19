@@ -12,7 +12,15 @@ function makeCircle() {
 
 }
 
+function move() {
+  box.style.transform = 'translateX(100px)'
+}
 
+function changeColor() {
+  let colorInput = document.querySelector('#colorInput')
+  box.style.backgroundColor = colorInput.value
+  colorInput.value = ''
+}
 
 
 
