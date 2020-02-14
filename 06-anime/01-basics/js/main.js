@@ -42,6 +42,20 @@ let svgMotion = anime({
   loop: true
 })
 
+let prevTranslateX = 0
+let funcBtn01 = document.getElementById('funcBtn01')
+funcBtn01.onclick = function() {
+  anime({
+    targets: '.func-move .box',
+    translateX: function() {
+      return prevTranslateX + anime.random(-50, 200)
+    },
+    changeComplete: function(el) {
+      console.log(prevTranslateX);
+      prevTranslateX = Number(el.animations[0].currentValue.slice(0,-2))
+    }
+  })
+}
 
 
 
