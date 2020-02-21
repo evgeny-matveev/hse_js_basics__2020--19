@@ -22,7 +22,18 @@ section:nth-last-of-type(even) {
   background: red;
 }
 
+.circles-wrapper {
+  display: flex;
+  width: 80vw;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
 
+.circle {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 100%;
+}
 
 
 /*  */
