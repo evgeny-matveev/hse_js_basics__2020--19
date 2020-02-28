@@ -1,11 +1,24 @@
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Bonbon|Delius+Unicase|Gloria+Hallelujah|Homemade+Apple|Indie+Flower|Mansalva|Petit+Formal+Script|Shadows+Into+Light|Waiting+for+the+Sunrise&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Bonbon|Delius+Unicase|Gloria+Hallelujah|Homemade+Apple|Indie+Flower|Mansalva|Petit+Formal+Script|Shadows+Into+Light|Waiting+for+the+Sunrise&display=block');
 
 body {
   margin: 0;
+  background: black;
 }
 
 div {
   position: fixed;
-  transition: 400ms all ease;
   will-change: transform, width, height;
+  z-index: 1;
+  transition: 1000ms all ease-in-out;
+  opacity: .8;
+}
+
+p {
+  position: fixed;
+  z-index: 0;
+  will-change: transform, font-size, color;
+}
+
+p, span {
+  transition: 400ms all ease;
 }
