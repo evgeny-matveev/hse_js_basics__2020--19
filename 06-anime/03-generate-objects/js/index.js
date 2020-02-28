@@ -13,7 +13,7 @@ for (let i = 0; i < numberOfRects; i += 1) {
     div.style.height = `${anime.random(0,500)}px`
   }
 
-  div.style.background = `rgb(${anime.random(0,255)},${anime.random(0,255)},${anime.random(0,255)})`
+  div.style.background = getRGBcolor()
   div.style.transform = `translate(${anime.random(0,100)}vw,${anime.random(0,100)}vh) rotate(${anime.random(0,360)}deg)`
 
   div.onmouseenter = function(e) {
@@ -30,7 +30,7 @@ for (let i = 0; i < numberOfRects; i += 1) {
       elStyle.height = `${anime.random(0,500)}px`
     }
 
-    elStyle.background = `rgb(${anime.random(0,255)},${anime.random(0,255)},${anime.random(0,255)})`
+    elStyle.background = getRGBcolor()
     elStyle.transform = `translate(${anime.random(0,100)}vw,${anime.random(0,100)}vh) rotate(${anime.random(0,360)}deg)`
   }
 
@@ -60,7 +60,7 @@ for (let i=0; i<wordsNum; i++) {
     span.innerText = letter
     span.style.fontFamily = fonts[anime.random(0,10)]
     span.style.fontSize = `${anime.random(0,5)}vw`
-    span.style.color = `rgb(${anime.random(0,255)},${anime.random(0,255)},${anime.random(0,255)})`
+    span.style.color = getRGBcolor()
     p.append(span)
   })
 
@@ -69,8 +69,9 @@ for (let i=0; i<wordsNum; i++) {
   document.body.append(p)
 }
 
-
-
+function getRGBcolor() {
+  return `rgb(${anime.random(0,255)},${anime.random(0,255)},${anime.random(0,255)})`
+}
 
 
 
