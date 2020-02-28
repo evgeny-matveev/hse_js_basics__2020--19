@@ -1,4 +1,4 @@
-let numberOfRects = 10
+let numberOfRects = 5
 
 for (let i = 0; i < numberOfRects; i += 1) {
   let div = document.createElement('div')
@@ -37,7 +37,19 @@ for (let i = 0; i < numberOfRects; i += 1) {
   document.body.append(div)
 }
 
-
+let fonts = [
+  'Amatic SC',
+  'Bonbon',
+  'Delius Unicase',
+  'Gloria Hallelujah',
+  'Homemade Apple',
+  'Indie Flower',
+  'Mansalva',
+  'Petit Formal Script',
+  'Shadows Into Light',
+  'Waiting for the Sunrise'
+]
+let word = Math.random().toString(36).slice(-10)
 
 
 
