@@ -49,7 +49,28 @@ let fonts = [
   'Shadows Into Light',
   'Waiting for the Sunrise'
 ]
-let word = Math.random().toString(36).slice(-10)
+
+let wordsNum = 20
+for (let i=0; i<wordsNum; i++) {
+  let p = document.createElement('p')
+  let word = Math.random().toString(36).slice(-10)
+
+  word.split('').forEach(letter => {
+    let span = document.createElement('span')
+    span.innerText = letter
+    span.style.fontFamily = fonts[anime.random(0,10)]
+    span.style.fontSize = `${anime.random(0,5)}vw`
+    span.style.color = `rgb(${anime.random(0,255)},${anime.random(0,255)},${anime.random(0,255)})`
+    p.append(span)
+  })
+
+  p.style.transform = `translate(${anime.random(0,80)}vw,${anime.random(0,80)}vh) rotate(${anime.random(0,360)}deg)`
+
+  document.body.append(p)
+}
+
+
+
 
 
 
